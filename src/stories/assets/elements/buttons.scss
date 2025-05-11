@@ -1,0 +1,67 @@
+.btn {
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--root-button-text);
+  cursor: pointer;
+
+  &:disabled {
+    background-color: var(--root-button-disabled-background);
+    color: var(--root-button-disabled-text);
+  }
+}
+
+.btn-primary {
+  background-color: var(--root-button-background);
+  color: var(--root-button-text);
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+
+  &:hover {
+    background-color: var(--root-button-hover-background);
+    color: var(--root-button-text);
+    border: none;
+  }
+
+  &:active {
+    background-color: var(--root-button-hover-background);
+    color: var(--root-button-text);
+  }
+
+  &:focus {
+    color: var(--root-button-text);
+    border: none;
+
+    outline: 3px solid var(--root-button-hover-background);
+    outline-offset: 0;
+    box-shadow: none;
+  }
+}
+
+.btn-secondary {
+  background-color: var(--root-background);
+  color: var(--root-button-text);
+  font-weight: bold;
+  border-radius: 4px;
+  border: solid 1px var(--root-border-dark);
+
+  &:hover {
+    background-color: var(--root-input-disabled-border);
+    color: var(--root-button-text);
+  }
+
+  &:active {
+    background-color: var(--root-button-hover-background);
+    color: var(--root-button-text);
+  }
+
+  &:focus {
+    color: var(--root-button-text);
+
+    outline: 3px solid var(--root-button-hover-background);
+    outline-offset: 0;
+    box-shadow: none;
+  }
+}

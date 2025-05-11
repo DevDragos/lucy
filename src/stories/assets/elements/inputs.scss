@@ -1,0 +1,26 @@
+.input {
+  padding: 9px 16px;
+  background-color: var(--root-input-background);
+  border: 1px solid var(--root-input-border);
+  border-radius: 4px;
+  color: var(--root-input-text);
+  height: 50px;
+  width: 100%;
+
+  transition: border-color 0.2s ease, outline-color 0.2s ease;
+
+  &:focus {
+    border: 1px solid var(--root-input-border);
+    outline: 3px solid var(--root-input-border-focus);
+    outline-offset: 0;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  &:disabled {
+    background-color: var(--root-input-disabled-background);
+    border-color: var(--root-input-disabled-border);
+  }
+}

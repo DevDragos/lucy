@@ -1,0 +1,22 @@
+@use '@/shared/scss/reboot';
+@use '@/shared/scss/utilites';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/checkbox';
+@use 'components/toggle';
+@use 'components/radio';
+@use '@/shared/scss/colors';
+@use 'components/inputs';
+@use '@/shared/scss/responsive';
+@use '@/shared/scss/spacing';
+@use 'components/label';
+@use '@/shared/scss/content';
+@use 'components/badge';
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+}
