@@ -1,4 +1,7 @@
-import type { Preview } from '@storybook/vue3'
+import type { Preview } from '@storybook/html'
+import { themes } from '@storybook/theming';
+//@ts-ignore
+import '../base/style.scss'
 
 const preview: Preview = {
   parameters: {
@@ -8,6 +11,16 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+      backgrounds: {
+          default: 'light',
+          values: [
+              { name: 'light', value: '#ffffff' },
+              { name: 'dark', value: '#000000' },
+          ],
+      },
+      docs: {
+          theme: themes.light,
+      },
   },
 };
 

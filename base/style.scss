@@ -1,0 +1,22 @@
+@use 'reboot';
+@use 'utilites';
+@use 'elements/buttons';
+@use 'elements/cards';
+@use 'elements/checkbox';
+@use 'elements/toggle';
+@use 'elements/radio';
+@use 'colors';
+@use 'elements/inputs';
+@use 'responsive';
+@use 'spacing';
+@use 'elements/label';
+@use 'content';
+@use 'elements/badge';
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+}

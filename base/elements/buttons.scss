@@ -9,6 +9,8 @@
   &:disabled {
     background-color: var(--root-button-disabled-background);
     color: var(--root-button-disabled-text);
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
