@@ -3,12 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "style": "base/style.scss",
+  "files": [
+    "base"
+  ],
+  "main": "base/style.scss",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-library": "sass base/style.scss dist/style.css"
   },
   "dependencies": {
     "lit": "^3.3.0"
