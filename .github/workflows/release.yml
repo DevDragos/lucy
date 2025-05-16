@@ -1,0 +1,35 @@
+name: Build and Commit dist/
+
+on:
+  push:
+    tags:
+      - 'v*'  # Triggers on version tags like v1.0.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for pushing tags
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build CSS
+        run: npm run build-library
+
+      - name: Commit dist to tag
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add dist/
+          git commit -m "Build: include dist for ${{ github.ref_name }}"
+          git push origin HEAD:${{ github.ref_name }}
