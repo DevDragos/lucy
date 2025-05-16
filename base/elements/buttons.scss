@@ -31,15 +31,6 @@
     background-color: var(--root-button-hover-background);
     color: var(--root-button-text);
   }
-
-  &:focus {
-    color: var(--root-button-text);
-    border: none;
-
-    outline: 3px solid var(--root-button-hover-background);
-    outline-offset: 0;
-    box-shadow: none;
-  }
 }
 
 .btn-secondary {
@@ -58,12 +49,15 @@
     background-color: var(--root-button-hover-background);
     color: var(--root-button-text);
   }
+}
 
-  &:focus {
-    color: var(--root-button-text);
+.btn-small{
+}
 
-    outline: 3px solid var(--root-button-hover-background);
-    outline-offset: 0;
-    box-shadow: none;
-  }
+.btn-medium{
+
+}
+
+.btn-large{
+
 }

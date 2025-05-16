@@ -28,7 +28,7 @@ export const createButton = ({
   }
 
   const mode = primary ? ' btn-primary' : 'btn-secondary';
-  btn.className = ['btn', `storybook-button--${size}`, mode].join(' ');
+  btn.className = ['btn', `btn-${size}`, mode].join(' ');
 
   return btn;
 };
