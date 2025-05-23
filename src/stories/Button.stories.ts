@@ -1,60 +1,51 @@
-import type { Meta, StoryObj } from '@storybook/html';
-import { fn } from '@storybook/test';
+import type { Meta, StoryObj } from '@storybook/html'
+import type { ButtonProps } from './Button'
+import { createButton } from './Button'
 
-import type { ButtonProps } from './Button';
-import { createButton } from './Button';
-
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Example/Button',
+  title: 'Elements/Buttons/Button',
   tags: ['autodocs'],
   render: (args) => {
-    // You can either use a function to create DOM elements or use a plain html string!
-    // return `<div>${label}</div>`;
-    return createButton(args);
+    return createButton(args)
   },
   argTypes: {
     label: { control: 'text' },
-    onClick: { action: 'onClick' },
-    disabled: {control: 'boolean'},
+    disabled: { control: 'boolean' },
     primary: { control: 'boolean' },
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
-    },
-  },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
-} satisfies Meta<ButtonProps>;
+      options: ['small', 'medium', 'large']
+    }
+  }
+} satisfies Meta<ButtonProps>
 
-export default meta;
-type Story = StoryObj<ButtonProps>;
+export default meta
+type Story = StoryObj<ButtonProps>
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
-    disabled:false
-  },
-};
+    disabled: false
+  }
+}
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
-  },
-};
+    label: 'Button'
+  }
+}
 
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
-  },
-};
+    label: 'Button'
+  }
+}
 
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
-  },
-};
+    label: 'Button'
+  }
+}

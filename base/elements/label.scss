@@ -6,4 +6,8 @@
   font-size: 14px;
 
   text-align: left;
+
+  &.disabled{
+    color: var(--root-button-disabled-text);
+  }
 }
