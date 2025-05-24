@@ -48,3 +48,19 @@
 .radio input:checked + .radiocheck::after {
   display: block;
 }
+
+.radio input:disabled + .radiocheck {
+  background-color: var(--root-input-disabled-background);
+  border-color: var(--root-input-disabled-border);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.radio input:disabled ~ .label-text {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.radio input:disabled {
+  pointer-events: none;
+}
