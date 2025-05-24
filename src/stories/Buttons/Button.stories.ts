@@ -11,11 +11,7 @@ const meta = {
   argTypes: {
     label: { control: 'text' },
     disabled: { control: 'boolean' },
-    primary: { control: 'boolean' },
-    size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large']
-    }
+    variant: { control: { type: 'select' }, options: ['primary', 'secondary'] }
   }
 } satisfies Meta<ButtonProps>
 
@@ -24,7 +20,7 @@ type Story = StoryObj<ButtonProps>
 
 export const Primary: Story = {
   args: {
-    primary: true,
+    variant: 'primary',
     label: 'Button',
     disabled: false
   }
@@ -32,20 +28,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    label: 'Button'
-  }
-}
-
-export const Large: Story = {
-  args: {
-    size: 'large',
-    label: 'Button'
-  }
-}
-
-export const Small: Story = {
-  args: {
-    size: 'small',
+    variant: 'secondary',
     label: 'Button'
   }
 }
