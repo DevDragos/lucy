@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 100%;
   word-break: break-word;
+
 }
 
 .checkbox input {
@@ -53,3 +54,20 @@
   flex: 1;
   line-height: 1.4;
 }
+
+.checkbox input:disabled + .checkmark {
+  background-color: var(--root-input-disabled-background);
+  border-color: var(--root-input-disabled-border);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.checkbox input:disabled ~ .label-text {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.checkbox input:disabled {
+  pointer-events: none;
+}
+
