@@ -3,12 +3,12 @@
   width: 100%;
   border-radius: 4px;
   font-weight: 500;
-  color: var(--root-button-text);
+  color: var(--colors-button-text);
   cursor: pointer;
 
   &:disabled {
-    background-color: var(--root-input-disabled-background);
-    border-color: var(--root-input-disabled-border);
+    background-color: var(--colors-button-disabled-background);
+    border-color: var(--colors-button-disabled-background);
     cursor: not-allowed;
     opacity: 0.6;
     pointer-events: none;
@@ -16,38 +16,38 @@
 }
 
 .btn-primary {
-  background-color: var(--root-button-background);
-  color: var(--root-button-text);
+  background-color: var(--colors-button-background);
+  color: var(--colors-button-text);
   font-weight: bold;
   border-radius: 4px;
   border: none;
 
   &:hover {
-    background-color: var(--root-button-hover-background);
-    color: var(--root-button-text);
+    background-color: var(--colors-button-hover-background);
+    color: var(--colors-button-text);
     border: none;
   }
 
   &:active {
-    background-color: var(--root-button-hover-background);
-    color: var(--root-button-text);
+    background-color: var(--colors-button-hover-background);
+    color: var(--colors-button-text);
   }
 }
 
 .btn-secondary {
-  background-color: var(--root-background);
-  color: var(--root-button-text);
+  background-color: var(--colors-dark-gray);
+  color: var(--colors-white);
   font-weight: bold;
   border-radius: 4px;
-  border: solid 1px var(--root-border-dark);
+  border: solid 1px var(--colors-dark-gray);
 
   &:hover {
-    background-color: var(--root-input-disabled-border);
-    color: var(--root-button-text);
+    background-color: var(--colors-very-dark-gray);
+    color: var(--colors-white);
   }
 
   &:active {
-    background-color: var(--root-button-hover-background);
-    color: var(--root-button-text);
+    background-color: var(--colors-very-dark-gray);
+    color: var(--colors-white);
   }
 }

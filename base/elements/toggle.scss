@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--root-input-border, #ccc);
+  background-color: var(--colors-medium-gray);
   transition: 0.4s;
   border-radius: 34px;
   flex-shrink: 0;
@@ -43,7 +43,7 @@
 }
 
 input:checked + .slider {
-  background-color: var(--root-input-border-focus);
+  background-color: var(--colors-primary-yellow);
 }
 
 input:checked + .slider::before {
@@ -51,8 +51,8 @@ input:checked + .slider::before {
 }
 
 .toggle input:disabled + .slider {
-  background-color: var(--root-input-disabled-background);
-  border-color: var(--root-input-disabled-border);
+  background-color: var(--colors-input-disabled-background);
+  border-color: var(--colors-input-disabled-border);
   cursor: not-allowed;
   opacity: 0.6;
 }
