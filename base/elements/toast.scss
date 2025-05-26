@@ -48,14 +48,6 @@
 }
 
 /* Toast Types */
-.toast-primary::before {
-  background-color: var( --colors-primary-yellow);
-}
-
-.toast-primary .toast-icon{
-  color: var( --colors-primary-yellow);
-}
-
 .toast-success::before {
   background-color: var(--colors-accent-success);
 }

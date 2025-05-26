@@ -10,7 +10,7 @@ const meta = {
   argTypes: {
     titleText: { control: 'text' },
     content: { control: 'text' },
-    variant: { control: { type: 'select' }, options: ['primary', 'success', 'info', 'warning', 'error'] }
+    variant: { control: { type: 'select' }, options: ['success', 'info', 'warning', 'error'] }
   }
 } satisfies Meta<ToastProps>
 
@@ -20,6 +20,6 @@ export const Default = {
   args: {
     titleText: 'Title',
     content: 'Content text goes here',
-    variant: 'primary'
+    variant: 'success'
   }
 }
