@@ -4,5 +4,6 @@ export default create({
   base: 'dark',
   brandTitle: 'Lucy',
   brandUrl: 'https://github.com/DevDragos/lucy',
-  brandTarget: '_blank'
+  brandTarget: '_blank',
+  brandImage: '/lucy-logo.png'
 })
