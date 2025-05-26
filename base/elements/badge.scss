@@ -36,27 +36,23 @@
 
 /* Badge Types */
 .badge-primary {
-  background-color: var(--colors-ada-yellow);
+  background-color: var( --colors-primary-yellow);
 }
 
 .badge-success {
-  background-color: var(--colors-accent-green);
+  background-color: var(--colors-accent-success);
 }
 
 .badge-error {
-  background-color: var(--colors-accent-red);
+  background-color: var(--colors-accent-danger);
 }
 
 .badge-warning {
-  background-color: var(--colors-accent-orange);
+  background-color: var(--colors-accent-warning);
 }
 
 .badge-info {
-  background-color: var(--colors-steel-blue);
-}
-
-.badge-secondary {
-  background-color: var(--colors-secondary-yellow);
+  background-color: var(--colors-accent-info);
 }
 
 /* Badge Fill Option */
@@ -67,25 +63,21 @@
 
 /* Make sure the badge text color inherits from the parent background when no background is set */
 .badge-primary.badge-fill {
-  color: var(--colors-ada-yellow);
+  color: var( --colors-primary-yellow);
 }
 
 .badge-success.badge-fill {
-  color: var(--colors-accent-green);
+  color: var(--colors-accent-success);
 }
 
 .badge-error.badge-fill {
-  color: var(--colors-accent-red);
+  color: var(--colors-accent-danger);
 }
 
 .badge-warning.badge-fill {
-  color: var(--colors-accent-orange);
+  color: var(--colors-accent-warning);
 }
 
 .badge-info.badge-fill {
-  color: var(--colors-steel-blue);
-}
-
-.badge-secondary.badge-fill {
-  color: var(--colors-secondary-yellow);
+  color: var(--colors-accent-info);
 }
