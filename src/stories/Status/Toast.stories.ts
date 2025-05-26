@@ -1,23 +1,25 @@
-import { createMicroLabel, type MicroLabelProps } from './MicroLabel.ts'
 import type { Meta } from '@storybook/html'
+import { createToast, type ToastProps } from './Toast.ts'
 
 const meta = {
-  title: 'Elements/Status/Micro Label',
+  title: 'Elements/Status/Toast',
   tags: ['autodocs'],
   render: (args) => {
-    return createMicroLabel(args)
+    return createToast(args)
   },
   argTypes: {
-    labelText: { control: 'text' },
+    titleText: { control: 'text' },
+    content: { control: 'text' },
     variant: { control: { type: 'select' }, options: ['primary', 'success', 'info', 'warning', 'error'] }
   }
-} satisfies Meta<MicroLabelProps>
+} satisfies Meta<ToastProps>
 
 export default meta
 
 export const Default = {
   args: {
-    labelText: 'Label',
+    titleText: 'Title',
+    content: 'Content text goes here',
     variant: 'primary'
   }
 }
