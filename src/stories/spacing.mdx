@@ -1,0 +1,52 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Lucy/ Spacing Scale" />
+
+# Margin Spacing Scale
+
+This documents the spacing utility classes (e.g. `.m-4`, `.mt-24`) used for layout.
+
+## All Sides (`.m-{size}`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Size</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>.m-4</code></td><td>4px</td><td><div style={{ margin: '4px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+    <tr><td><code>.m-8</code></td><td>8px</td><td><div style={{ margin: '8px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+    <tr><td><code>.m-12</code></td><td>12px</td><td><div style={{ margin: '12px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+    <tr><td><code>.m-16</code></td><td>16px</td><td><div style={{ margin: '16px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+    <tr><td><code>.m-24</code></td><td>24px</td><td><div style={{ margin: '24px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+    <tr><td><code>.m-32</code></td><td>32px</td><td><div style={{ margin: '32px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+    <tr><td><code>.m-48</code></td><td>48px</td><td><div class="m-48" style={{ margin: '48px', background: '#ddd', width: '40px', height: '20px' }} /></td></tr>
+  </tbody>
+</table>
+
+## Individual Directions
+
+Here’s how you apply spacing to specific sides.
+
+### Top (`.mt-{size}`)
+```html
+<div class="mt-16">Margin Top 16px</div>
+```
+
+### Right (`.mr-{size}`)
+```html
+<div class="mr-16">Margin right 16px</div>
+```
+
+### Bottom (`.mb-{size}`)
+```html
+<div class="mb-16">Margin Bottom 16px</div>
+```
+
+### Left (`.ml-{size}`)
+```html
+<div class="ml-16">Margin Left 16px</div>
+```

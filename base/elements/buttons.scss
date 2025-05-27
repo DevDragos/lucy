@@ -1,6 +1,6 @@
 .btn {
-  height: 45px;
-  width: 100%;
+  height: 40px;
+  padding: 10px 24px;
   border-radius: 4px;
   font-weight: 500;
   color: var(--colors-button-text);
@@ -49,5 +49,24 @@
   &:active {
     background-color: var(--colors-very-dark-gray);
     color: var(--colors-white);
+  }
+}
+
+
+.btn-text {
+  color: var(--colors-button-text);
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  padding: 0;
+  height: fit-content;
+  width: fit-content;
+
+  &:hover {
+   text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: underline;
   }
 }

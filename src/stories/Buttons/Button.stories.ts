@@ -11,7 +11,7 @@ const meta = {
   argTypes: {
     label: { control: 'text' },
     disabled: { control: 'boolean' },
-    variant: { control: { type: 'select' }, options: ['primary', 'secondary'] }
+    variant: { control: { type: 'select' }, options: ['primary', 'secondary', 'text'] }
   }
 } satisfies Meta<ButtonProps>
 
@@ -29,6 +29,13 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
+    label: 'Button'
+  }
+}
+
+export const Text: Story = {
+  args: {
+    variant: 'text',
     label: 'Button'
   }
 }
