@@ -69,4 +69,13 @@
   &:active {
     text-decoration: underline;
   }
+
+  &:disabled {
+    background-color: transparent;
+    color: var(--colors-button-disabled-text);
+    border-color: var(--colors-button-disabled-background);
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+  }
 }
